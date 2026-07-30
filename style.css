@@ -1,16 +1,10 @@
 @font-face {
-    font-family: RoundThin;
-    src: url(assets/fonts/Inter_18pt-Thin.ttf);
+    font-family: "Inter";
+    src: url(assets/fonts/InterVariable.woff2);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
-@font-face {
-    font-family: RoundMedium;
-    src: url(assets/fonts/Inter_18pt-Light.ttf);
-}
-@font-face {
-    font-family: RoundRegular;
-    src: url(assets/fonts/Inter_18pt-Regular.ttf);
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -24,6 +18,7 @@ body {
     background-size: cover;
     font-family: RoundMedium;
     overflow: hidden;
+    font-family: "Inter", system-ui, sans-serif;
 }
 .container {
     width: min(420px, 75%);
@@ -39,21 +34,20 @@ p{
     align-content: center;
 }
 .font-thin{
-    font-family: RoundMedium;
+    font-weight: 100;
     color: #ffffff;
 }
 .font-medium{
-    font-family: RoundMedium;
+    font-weight: 300;
     color: #ffffff;
 }
 .font-regular{
-    font-family: RoundRegular;
+    font-weight: 400;
     color: #ffffff;
 }
 footer {
     margin-top: auto;
     padding-top: 1rem;
-
     text-align: center;
     font-size: .85rem;
     color: rgba(255,255,255,.7);
@@ -64,7 +58,7 @@ footer {
     gap: .75rem;
 }
 .button {
-    display: center;
+    display: inline-block;
     border-radius: 14px;
     text-decoration: none;
     text-align: center;
