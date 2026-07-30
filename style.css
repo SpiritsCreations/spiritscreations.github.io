@@ -1,0 +1,80 @@
+@font-face {
+    font-family: RoundThin;
+    src: url(assets/fonts/Inter_18pt-Thin.ttf);
+}
+@font-face {
+    font-family: RoundMedium;
+    src: url(assets/fonts/Inter_18pt-Light.ttf);
+}
+@font-face {
+    font-family: RoundRegular;
+    src: url(assets/fonts/Inter_18pt-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    background-image: url(assets/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: RoundMedium;
+    overflow: hidden;
+}
+.container {
+    width: min(420px, 75%);
+    padding: 2rem;
+    border-radius: 24px;
+    background: #0e0e0e;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+p{
+    margin: 10px 0px;
+    align-content: center;
+}
+.font-thin{
+    font-family: RoundMedium;
+    color: #ffffff;
+}
+.font-medium{
+    font-family: RoundMedium;
+    color: #ffffff;
+}
+.font-regular{
+    font-family: RoundRegular;
+    color: #ffffff;
+}
+footer {
+    margin-top: auto;
+    padding-top: 1rem;
+
+    text-align: center;
+    font-size: .85rem;
+    color: rgba(255,255,255,.7);
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+.button {
+    display: center;
+    border-radius: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #222222;
+    border-bottom: 1px #222222 solid;
+    transition: .2s ease;
+}
+.button:hover {
+    background-color: #333333;
+    border-bottom: 1px #4fb7fc solid;
+    transform: .2s ease;
+}
